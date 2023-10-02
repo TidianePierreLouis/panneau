@@ -1,0 +1,64 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.panneau{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.panneaux{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panneaux:hover{
+    flex: 5;
+    transition: 1s;
+}
+
+.coucou{
+    background-color: dodgerblue;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.panneaux:hover>.coucou{
+    opacity: 100;
+    transform: translateY(0vh);
+    transition: 1s;
+    transition: opacity 1s;
+}
+
+.panneaux>.coucou{
+    transform: translateY(150vh);
+    opacity: 0;
+}
+.un{
+    background-image: url("1.png");
+}
+.deux{
+    background-image: url("2.png");
+}
+.trois{
+    background-image: url("3.png");
+}
+.quatre{
+    background-image: url("4.png");
+}
+.cinq{
+    background-image: url("5.png");
+}
+
